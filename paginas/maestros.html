@@ -4,92 +4,160 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../css/styles.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
     />
+    <link rel="stylesheet" href="../css/styles.css" />
     <title>kung Fu</title>
   </head>
   <body>
     <header class="box-shadow">
-      <nav>
-        <ul>
-          <li><a href="../index.html">Home</a></li>
-          <li><a href="clases.html">Clases</a></li>
-          <li><a href="maestros.html">Maestros</a></li>
-          <li><a href="sobre-nosotros.html">Sobre nosotros</a></li>
-          <li><a href="contacto.html">Contacto</a></li>
-        </ul>
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand d-flex" href="../index.html">
+            <span class="align-items-center">
+              <img
+                src="../images/logo.jpg"
+                alt="Logo"
+                class="logo-img img-fluid circle"
+              />
+            </span>
+          </a>
+          <button
+            class="navbar-toggler navbar-dark"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <i class="fa fa-bars"></i>
+          </button>
+          <section class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="clases.html">Clases</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="maestros.html">Maestros</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="sobre-nosotros.html"
+                  >Sobre nosotros</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contacto.html">Contacto</a>
+              </li>
+            </ul>
+          </section>
+        </div>
       </nav>
     </header>
     <main>
-      <section id="galery" class="center">
-        <h1 class="text-shadow">Maestros</h1>
-        <article>
-          <img
-            src="../images/bruce.png"
-            alt="maestro-1"
-            class="box-shadow border-pic-radius"
-          />
-          <h3>Bruce Lee</h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam beatae
-            quas provident possimus quisquam a consectetur quasi, numquam
-            officiis, eligendi incidunt maiores magnam? Harum nulla doloremque
-            sint, iusto earum animi!
-          </p>
-        </article>
-        <article>
-          <img
-            src="../images/jackie.png"
-            alt="maestro-2"
-            class="box-shadow border-pic-radius"
-          />
-          <h3>Jackie Chan</h3>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci,
-            fuga! Dignissimos voluptates exercitationem ut, nobis nemo error
-            eveniet pariatur repellat ullam nulla! Iste reiciendis animi quaerat
-            debitis, qui fugit rem?
-          </p>
-        </article>
-        <article>
-          <img
-            src="../images/ip-man-3-mit-donnie-yen.webp"
-            alt="maestro-3"
-            class="box-shadow border-pic-radius"
-          />
-          <h3>Donnie Yen</h3>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci,
-            fuga! Dignissimos voluptates exercitationem ut, nobis nemo error
-            eveniet pariatur repellat ullam nulla! Iste reiciendis animi quaerat
-            debitis, qui fugit rem?
-          </p>
-        </article>
-      </section>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 margin-bottom">
+            <article class="card box-shadow">
+              <img
+                src="../images/ip-man-3-mit-donnie-yen.webp"
+                class="card-img-top img-fluid"
+                alt="maestro-1"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Donnie Yen</h5>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi
+                  deleniti itaque sit eos architecto minima totam, fuga, cum
+                  quasi velit voluptates ducimus nemo id inventore tempore?
+                  Neque culpa consequatur ipsam?
+                </p>
+              </div>
+            </article>
+          </div>
+          <div class="col-md-4 margin-bottom">
+            <article class="card box-shadow">
+              <img
+                src="../images/ip-man-3-mit-donnie-yen.webp"
+                class="card-img-top img-fluid"
+                alt="maestro-2"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Donnie Yen</h5>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi
+                  deleniti itaque sit eos architecto minima totam, fuga, cum
+                  quasi velit voluptates ducimus nemo id inventore tempore?
+                  Neque culpa consequatur ipsam?
+                </p>
+              </div>
+            </article>
+          </div>
+          <div class="col-md-4 margin-bottom">
+            <article class="card box-shadow">
+              <img
+                src="../images/ip-man-3-mit-donnie-yen.webp"
+                class="card-img-top img-fluid"
+                alt="maestro-3"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Donnie Yen</h5>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi
+                  deleniti itaque sit eos architecto minima totam, fuga, cum
+                  quasi velit voluptates ducimus nemo id inventore tempore?
+                  Neque culpa consequatur ipsam?
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
     </main>
-    <footer class="center">
-      <p>Seguinos en redes sociales:</p>
-      <ul class="social-icons">
-        <li>
-          <a href="https://github.com/XianBarbera"
-            ><i class="fab fa-github"></i
-          ></a>
-        </li>
-        <li>
-          <a href="https://www.facebook.com/ian.a.barbera"
-            ><i class="fab fa-facebook-f"></i
-          ></a>
-        </li>
-        <li>
-          <a href="https://www.instagram.com/ianabebarbera"
-            ><i class="fab fa-instagram"></i
-          ></a>
-        </li>
-      </ul>
-      <p>Derechos de autor &copy; 2023 Ian Barbera</p>
+    <footer class="center custom-footer">
+      <div class="container">
+        <div class="row">
+          <section class="col-12">
+            <p>Seguinos en redes sociales:</p>
+          </section>
+          <section class="col-12">
+            <ul class="social-icons">
+              <li>
+                <a href="https://github.com/XianBarbera"
+                  ><i class="fab fa-github"></i
+                ></a>
+              </li>
+              <li>
+                <a href="https://www.facebook.com/ian.a.barbera"
+                  ><i class="fab fa-facebook-f"></i
+                ></a>
+              </li>
+              <li>
+                <a href="https://www.instagram.com/ianabebarbera"
+                  ><i class="fab fa-instagram"></i
+                ></a>
+              </li>
+            </ul>
+          </section>
+          <section class="col-12">
+            <p>Derechos de autor &copy; 2023 Ian Barbera</p>
+          </section>
+        </div>
+      </div>
     </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
+

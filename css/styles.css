@@ -11,90 +11,60 @@ body {
 
 header {
   background-color: #2c2c2c;
+}
+
+.nav-link {
   color: #fff;
-  padding: 20px;
 }
 
-.img-wd-ht {
-  width: 800px;
-  height: 500px;
-}
-
-nav ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-nav ul li {
-  display: inline;
-  margin-right: 10px;
-}
-
-nav ul li a {
-  color: #fff;
-  text-decoration: none;
-}
-
-nav ul li a:hover {
+.nav-link:hover {
   color: red;
   transition-duration: 300ms;
-  border-bottom: 4px solid red;
+}
+
+.logo-img {
+  width: 50px;
+  height: auto;
+}
+
+@media (max-width: 767px) {
+  .logo-img {
+    width: 30px;
+  }
+  .logo-img.d-lg-none {
+    display: inline-block;
+  }
+  .navbar-nav .nav-link:hover {
+    color: white;
+  }
+  .navbar-nav .nav-link:focus {
+    color: red;
+  }
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
+  border-color: black;
 }
 
 main {
   padding: 20px;
 }
 
-section {
-  margin-bottom: 20px;
-}
-
-h1 h2 h3 {
-  color: #000000;
-}
-
-#galery img {
-  width: 300px;
-  height: 300px;
-}
-
-form {
-  margin-top: 20px;
-}
-
-label {
-  display: block;
-  margin-bottom: 5px;
-}
-
-input,
-textarea {
-  outline: none;
-  width: 100%;
-  padding: 5px;
-  margin-bottom: 10px;
-  border: none;
-  font-size: 25px;
-  overflow: hidden;
-}
-
-button {
+.form-contact-btn {
   background-color: #333;
   color: #fff;
-  padding: 10px 20px;
   border: none;
-  cursor: pointer;
   font-weight: bolder;
 }
 
-button:hover {
+.form-contact-btn:hover {
   background-color: #000000;
   color: red;
   transition-duration: 300ms;
 }
 
-button:active {
+.form-contact-btn:active {
   color: rgb(197, 8, 8);
   background-color: white;
 }
@@ -104,7 +74,9 @@ footer {
   color: #fff;
   padding: 20px;
 }
-
+.custom-footer {
+  margin-bottom: 0;
+}
 .social-icons {
   margin-top: 10px;
   list-style: none;
@@ -143,10 +115,14 @@ footer {
   transition-duration: 300ms;
 }
 
-.border-pic-radius {
+.circle {
   border-radius: 100%;
 }
 
 .border-radius {
   border-radius: 5px;
+}
+
+.margin-bottom {
+  margin-bottom: 20px;
 }

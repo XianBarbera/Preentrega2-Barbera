@@ -4,79 +4,164 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../css/styles.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
     />
+    <link rel="stylesheet" href="../css/styles.css" />
     <title>kung Fu</title>
   </head>
   <body>
     <header class="box-shadow">
-      <nav>
-        <ul>
-          <li><a href="../index.html">Home</a></li>
-          <li><a href="clases.html">Clases</a></li>
-          <li><a href="maestros.html">Maestros</a></li>
-          <li><a href="sobre-nosotros.html">Sobre nosotros</a></li>
-          <li><a href="contacto.html">Contacto</a></li>
-        </ul>
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand d-flex" href="../index.html">
+            <span class="align-items-center">
+              <img
+                src="../images/logo.jpg"
+                alt="Logo"
+                class="logo-img img-fluid circle"
+              />
+            </span>
+          </a>
+          <button
+            class="navbar-toggler navbar-dark"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <i class="fa fa-bars"></i>
+          </button>
+          <section class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="clases.html">Clases</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="maestros.html">Maestros</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="sobre-nosotros.html"
+                  >Sobre nosotros</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contacto.html">Contacto</a>
+              </li>
+            </ul>
+          </section>
+        </div>
       </nav>
     </header>
+
     <main>
-      <section class="center">
-        <img src="../images/dragon.png" alt="imagen de un dragon" />
-      </section>
-      <section>
-        <h1 class="text-shadow">Contactenos</h1>
-        <form>
-          <label for="nombre" class="text-shadow" requi>Nombre:</label>
-          <input
-            type="text"
-            id="nombre"
-            name="nombre"
-            class="box-shadow border-radius"
-          />
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <section class="center">
+              <img
+                src="../images/dragon.png"
+                alt="imagen de un dragon"
+                class="img-fluid"
+              />
+            </section>
+          </div>
+          <div class="col-md-6">
+            <section>
+              <h1 class="text-shadow">Contáctenos</h1>
+              <form>
+                <div class="mb-3">
+                  <label for="nombre" class="form-label text-shadow" required
+                    >Nombre:</label
+                  >
+                  <input
+                    type="text"
+                    id="nombre"
+                    name="nombre"
+                    class="form-control box-shadow border-radius"
+                  />
+                </div>
 
-          <label for="email" class="text-shadow">Email:</label>
-          <input
-            type="email"
-            id="email"
-            name="email"
-            class="box-shadow border-radius"
-          />
+                <div class="mb-3">
+                  <label for="email" class="form-label text-shadow"
+                    >Email:</label
+                  >
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    class="form-control box-shadow border-radius"
+                  />
+                </div>
 
-          <label for="mensaje" class="text-shadow">Mensaje:</label>
-          <textarea
-            id="mensaje"
-            name="mensaje"
-            class="box-shadow border-radius"
-          ></textarea>
+                <div class="mb-3">
+                  <label for="mensaje" class="form-label text-shadow"
+                    >Mensaje:</label
+                  >
+                  <textarea
+                    id="mensaje"
+                    name="mensaje"
+                    class="form-control box-shadow border-radius"
+                  ></textarea>
+                </div>
 
-          <button type="submit" class="border-radius">Enviar</button>
-        </form>
-      </section>
+                <button
+                  type="submit"
+                  class="btn btn-primary form-contact-btn border-radius"
+                >
+                  Enviar
+                </button>
+              </form>
+            </section>
+          </div>
+        </div>
+      </div>
     </main>
-    <footer class="center">
-      <p>Seguinos en redes sociales:</p>
-      <ul class="social-icons">
-        <li>
-          <a href="https://github.com/XianBarbera"
-            ><i class="fab fa-github"></i
-          ></a>
-        </li>
-        <li>
-          <a href="https://www.facebook.com/ian.a.barbera"
-            ><i class="fab fa-facebook-f"></i
-          ></a>
-        </li>
-        <li>
-          <a href="https://www.instagram.com/ianabebarbera"
-            ><i class="fab fa-instagram"></i
-          ></a>
-        </li>
-      </ul>
-      <p>Derechos de autor &copy; 2023 Ian Barbera</p>
+
+    <footer class="center custom-footer">
+      <div class="container">
+        <div class="row">
+          <section class="col-12">
+            <p>Seguinos en redes sociales:</p>
+          </section>
+          <section class="col-12">
+            <ul class="social-icons">
+              <li>
+                <a href="https://github.com/XianBarbera"
+                  ><i class="fab fa-github"></i
+                ></a>
+              </li>
+              <li>
+                <a href="https://www.facebook.com/ian.a.barbera"
+                  ><i class="fab fa-facebook-f"></i
+                ></a>
+              </li>
+              <li>
+                <a href="https://www.instagram.com/ianabebarbera"
+                  ><i class="fab fa-instagram"></i
+                ></a>
+              </li>
+            </ul>
+          </section>
+          <section class="col-12">
+            <p>Derechos de autor &copy; 2023 Ian Barbera</p>
+          </section>
+        </div>
+      </div>
     </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
