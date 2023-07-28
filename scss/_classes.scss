@@ -1,0 +1,56 @@
+.red {
+    @extend %red-text;
+ }
+  
+.text-shadow {
+    @extend %text-shadow;
+  }
+  
+.box-shadow {
+    @extend %box-shadow;
+  }
+
+
+.center {
+    text-align: center;
+  }
+
+.container {
+  flex: 1;
+}
+
+.embed-responsive {
+  margin-bottom: 20px;
+}
+
+.list-style-none {
+    list-style-type: none;
+  }
+  
+  .circle {
+    border-radius: 100%;
+  }
+  
+  .border-radius {
+    border-radius: 5px;
+  }
+  
+  .margin-bottom {
+    margin-bottom: 20px;
+  }
+  
+  .border-none {
+    border: none;
+  }
+  
+  .font-arial {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .font-color {
+    color: $font-color;
+  }
+  
+  .font-size {
+    font-size: medium;
+  }

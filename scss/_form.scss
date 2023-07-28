@@ -1,0 +1,17 @@
+.form-contact-btn {
+    background-color: $form-btn-bg;
+    color: $form-btn-color;
+    border: none;
+    font-weight: bolder;
+  
+    &:hover {
+      background-color: $form-btn-hover-bg;
+      color: $form-btn-hover-color;
+      transition-duration: 300ms;
+    }
+  
+    &:active {
+      color: $form-btn-active-color;
+      background-color: white;
+    }
+  }

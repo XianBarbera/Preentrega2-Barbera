@@ -1,5 +1,3 @@
-@import 'mixins';
-
 .gallery {
     display: flex;
     flex-wrap: wrap;
@@ -12,12 +10,12 @@
       margin-bottom: 10px;
       display: flex;
       flex-direction: column;
+    }
   
-      img {
-        width: 100%;
-        height: auto;
-        @include border-radius;
-      }
+    img {
+      width: 100%;
+      height: auto;
+      border-radius: 5px;
     }
   }
   

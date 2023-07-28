@@ -1,64 +1,11 @@
-@import "variables";
-@import "mixins";
-@import "lists";
-@import'body';
-@import 'footer';
-@import 'gallery';
-@import 'carousel';
+@import 'variables';
+@import 'mixins';
+@import 'extends';
+@import 'layout';
 @import 'navbar';
-
-.center {
-  @include center;
-}
-
-main {
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-}
-
-.container {
-  flex: 1;
-}
-
-.circle {
-  @include border-radius(50%);
-}
-
-.form-contact-btn {
-  @include form-contact-btn;
-}
-
-.embed-responsive {
-  margin-bottom: 20px;
-}
-
-.custom-video-iframe {
-  width: 70%;
-  height: 400px;
-}
-
-.social-icons li {
-  margin-right: 10px;
-}
-
-.social-icons a {
-  @include social-icon;
-}
-
-.red {
-  color: $red-color;
-}
-
-.font-arial {
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-.font-color {
-  color: $text-color;
-}
-
-.font-size {
-  font-size: medium;
-}
+@import 'form';
+@import 'video';
+@import 'carousel';
+@import 'gallery';
+@import 'footer';
+@import 'classes';

@@ -1,0 +1,11 @@
+%red-text {
+    color: red;
+  }
+
+%text-shadow {
+    text-shadow: 1.4px 2.1px 4px $text-shadow-color;
+  }
+  
+%box-shadow {
+    box-shadow: 1.4px 2.1px 4px $box-shadow-color;
+  }
