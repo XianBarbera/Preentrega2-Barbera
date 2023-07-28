@@ -1,0 +1,56 @@
+// _mixins.scss
+
+// Mixin para centrar elementos horizontalmente
+@mixin center {
+  text-align: center;
+}
+
+// Mixin para aplicar sombra de texto
+@mixin text-shadow {
+  text-shadow: 1.4px 2.1px 4px $text-shadow-color;
+}
+
+// Mixin para aplicar sombra a un contenedor
+@mixin box-shadow {
+  box-shadow: 1.4px 2.1px 4px $box-shadow-color;
+}
+
+// Mixin para estilos de botón de contacto
+@mixin form-contact-btn {
+  background-color: $secondary-color;
+  color: #fff;
+  border: none;
+  font-weight: bolder;
+
+  &:hover {
+    background-color: rgb(31, 31, 31);
+    color: $red-color;
+    transition-duration: 300ms;
+  }
+
+  &:active {
+    color: $red-color;
+    background-color: white;
+  }
+}
+
+// Mixin para estilos de iconos sociales
+@mixin social-icon {
+  color: #fff;
+  font-size: 50px;
+
+  &:hover {
+    color: $red-color;
+    transition-duration: 300ms;
+  }
+}
+
+// Mixin para aplicar un radio de borde específico
+@mixin border-radius($radius: 5px) {
+  border-radius: $radius;
+}
+
+// Mixin para quitar la viñeta de una lista
+@mixin list-style-none {
+  list-style: none;
+}

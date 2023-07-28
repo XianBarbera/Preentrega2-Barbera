@@ -1,0 +1,23 @@
+@import 'mixins';
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 30px;
+    width: 100%;
+  
+    figure {
+      flex-basis: calc(25% - 10px);
+      margin-bottom: 10px;
+      display: flex;
+      flex-direction: column;
+  
+      img {
+        width: 100%;
+        height: auto;
+        @include border-radius;
+      }
+    }
+  }
+  

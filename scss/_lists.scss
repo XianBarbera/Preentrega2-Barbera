@@ -1,0 +1,21 @@
+@import 'mixins';
+@import 'variables';
+
+ul {
+    @include list-style-none;
+  }
+  
+  ul li a{
+    &:hover {
+      background-color:$secondary-color;
+      color: $red-color;
+      transition-duration: 300ms;
+    }
+  
+    &:active {
+      color: $red-color;
+      background-color: white;
+    }
+  }
+
+  

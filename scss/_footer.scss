@@ -1,0 +1,26 @@
+@import 'variables';
+@import 'mixins';
+
+footer {
+    background-color: $secondary-color;
+    height: 100%;
+    color: #fff;
+    padding: 20px;
+  }
+  
+  .social-icons {
+    margin-top: 10px;
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+  
+    li {
+      margin-right: 10px;
+    }
+  
+    a {
+      @include social-icon;
+    }
+  }
+  
