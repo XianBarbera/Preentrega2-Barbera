@@ -1,28 +1,27 @@
 footer {
-    background-color: $footer-bg-color;
-    height: 100%;
-    color: $footer-text-color;
-    padding: 20px;
+  background-color: $footer-bg-color;
+  color: $footer-text-color;
+  padding: 20px;
+}
+
+.social-icons {
+  margin-top: 10px;
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+
+  li {
+    margin-right: 10px;
   }
-  
-  .social-icons {
-    margin-top: 10px;
-    list-style: none;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-  
-    li {
-      margin-right: 10px;
-    }
-  
-    a {
-      color: #fff;
-      font-size: 50px;
-  
-      &:hover {
-        color: red;
-        transition-duration: 300ms;
-      }
+
+  a {
+    color: #fff;
+    font-size: 24px;  
+    
+    &:hover {
+      color: red;
+      transition-duration: 300ms;
     }
   }
+}

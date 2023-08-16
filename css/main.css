@@ -103,16 +103,23 @@ header {
   margin-bottom: 10px;
   display: flex;
   flex-direction: column;
+  height: 250px;
+}
+@media (max-width: 768px) {
+  .gallery figure {
+    flex-basis: 100%;
+    height: auto;
+  }
 }
 .gallery img {
   width: 100%;
-  height: auto;
+  height: 100%;
+  object-fit: cover;
   border-radius: 5px;
 }
 
 footer {
   background-color: rgb(0, 0, 0);
-  height: 100%;
   color: #fff;
   padding: 20px;
 }
@@ -129,7 +136,7 @@ footer {
 }
 .social-icons a {
   color: #fff;
-  font-size: 50px;
+  font-size: 24px;
 }
 .social-icons a:hover {
   color: red;
@@ -178,6 +185,28 @@ footer {
 
 .font-size {
   font-size: medium;
+}
+
+.card {
+  flex-basis: calc(33.33% - 20px);
+  margin-right: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  height: 100%;
+}
+@media (max-width: 992px) {
+  .card {
+    flex-basis: calc(50% - 20px);
+  }
+}
+@media (max-width: 768px) {
+  .card {
+    flex-basis: 100%;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
